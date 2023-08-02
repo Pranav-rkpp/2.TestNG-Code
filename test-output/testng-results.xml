@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="1" passed="0" failed="1" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2023-07-21T14:52:07 IST" name="Default suite" finished-at="2023-07-21T14:54:07 IST" duration-ms="120384">
+    <groups>
+    </groups>
+    <test started-at="2023-07-21T14:52:07 IST" name="Default test" finished-at="2023-07-21T14:54:07 IST" duration-ms="120384">
+      <class name="handlingInvocation.InvocationFactor">
+        <test-method signature="CountCricketWord()[pri:0, instance:handlingInvocation.InvocationFactor@ffaa6af]" started-at="2023-07-21T14:52:07 IST" name="CountCricketWord" finished-at="2023-07-21T14:54:07 IST" duration-ms="120109" status="FAIL">
+          <exception class="org.testng.internal.thread.ThreadTimeoutException">
+            <message>
+              <![CDATA[Method handlingInvocation.InvocationFactor.CountCricketWord() didn't finish within the time-out 120000]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.testng.internal.thread.ThreadTimeoutException: Method handlingInvocation.InvocationFactor.CountCricketWord() didn't finish within the time-out 120000
+at java.base@15.0.1/sun.nio.ch.Net.poll(Native Method)
+at java.base@15.0.1/sun.nio.ch.NioSocketImpl.park(NioSocketImpl.java:181)
+at java.base@15.0.1/sun.nio.ch.NioSocketImpl.timedRead(NioSocketImpl.java:285)
+at java.base@15.0.1/sun.nio.ch.NioSocketImpl.implRead(NioSocketImpl.java:309)
+at java.base@15.0.1/sun.nio.ch.NioSocketImpl.read(NioSocketImpl.java:350)
+at java.base@15.0.1/sun.nio.ch.NioSocketImpl$1.read(NioSocketImpl.java:803)
+at java.base@15.0.1/java.net.Socket$SocketInputStream.read(Socket.java:981)
+at app//okio.Okio$2.read(Okio.java:140)
+at app//okio.AsyncTimeout$2.read(AsyncTimeout.java:237)
+at app//okio.RealBufferedSource.indexOf(RealBufferedSource.java:355)
+at app//okio.RealBufferedSource.readUtf8LineStrict(RealBufferedSource.java:227)
+at app//okhttp3.internal.http1.Http1Codec.readHeaderLine(Http1Codec.java:215)
+at app//okhttp3.internal.http1.Http1Codec.readResponseHeaders(Http1Codec.java:189)
+at app//okhttp3.internal.http.CallServerInterceptor.intercept(CallServerInterceptor.java:88)
+at app//okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:147)
+at app//okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:121)
+at app//org.openqa.selenium.remote.internal.OkHttpClient$Factory$1.lambda$createClient$1(OkHttpClient.java:152)
+at app//org.openqa.selenium.remote.internal.OkHttpClient$Factory$1$$Lambda$181/0x00000001001d5368.intercept(Unknown Source)
+at app//okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:147)
+at app//okhttp3.internal.connection.ConnectInterceptor.intercept(ConnectInterceptor.java:45)
+at app//okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:147)
+at app//okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:121)
+at app//okhttp3.internal.cache.CacheInterceptor.intercept(CacheInterceptor.java:93)
+at app//okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:147)
+at app//okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:121)
+at app//okhttp3.internal.http.BridgeInterceptor.intercept(BridgeInterceptor.java:93)
+at app//okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:147)
+at app//okhttp3.internal.http.RetryAndFollowUpInterceptor.intercept(RetryAndFollowUpInterceptor.java:126)
+at app//okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:147)
+at app//okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:121)
+at app//okhttp3.RealCall.getResponseWithInterceptorChain(RealCall.java:200)
+at app//okhttp3.RealCall.execute(RealCall.java:77)
+at app//org.openqa.selenium.remote.internal.OkHttpClient.execute(OkHttpClient.java:103)
+at app//org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:155)
+at app//org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+at app//org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+at app//org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:277)
+at app//handlingInvocation.InvocationFactor.CountCricketWord(InvocationFactor.java:29)
+at java.base@15.0.1/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base@15.0.1/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
+at java.base@15.0.1/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base@15.0.1/java.lang.reflect.Method.invoke(Method.java:564)
+at app//org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at app//org.testng.internal.invokers.InvokeMethodRunnable.runOne(InvokeMethodRunnable.java:47)
+at app//org.testng.internal.invokers.InvokeMethodRunnable.call(InvokeMethodRunnable.java:73)
+at app//org.testng.internal.invokers.InvokeMethodRunnable.call(InvokeMethodRunnable.java:11)
+at java.base@15.0.1/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+at java.base@15.0.1/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+at java.base@15.0.1/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
+at java.base@15.0.1/java.lang.Thread.run(Thread.java:832)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.testng.internal.thread.ThreadTimeoutException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- CountCricketWord -->
+      </class> <!-- handlingInvocation.InvocationFactor -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
